@@ -17,7 +17,8 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 4. **Weather Swap**
    
    - If rain or cold season likely → make sure at least one indoor activity replaces outdoor ones.
-
+   - If in rainy or cold season → Include at least one indoor backup per day.
+     
 5. **Time Overrun**
    
    - If total planned time > available hours → shorten lunch or pick a nearer stop.
@@ -33,5 +34,11 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 8. **Bookings**
    
    - If activity usually needs a ticket → just remind the user to book it; never simulate bookings.
+  
+9. **Short Walks**
+   
+   - If user says "short walks only"  → travel distances under 25 minutes are prioritized
 
+> Change Log (2025-11-05): 
+> – Updated distance rule to support ‘short walks only’ preference.
 ---
