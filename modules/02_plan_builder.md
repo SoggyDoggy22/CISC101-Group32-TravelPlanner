@@ -93,7 +93,7 @@
 
 ---
 
-## Daily Loop (Pseudocode): 
+## Daily Loop (Pseudocode)
 ```
 for each day:
 pick Morning activity (near lodging, open, fits budget, accessible)
