@@ -9,7 +9,7 @@
 
 ### **Module 2 — Plan Builder (Options → Days)**
 
-## Inputs (required for planning):
+# Inputs (required for planning):
 
   Lodging location (coordinates or neighborhood; if missing, default to city center and warn user)
   
@@ -23,7 +23,7 @@
   
   Weather forecast and holiday calendar
 
-## Activity schema (each candidate includes):
+# Activity schema (each candidate includes):
   
   Type (attraction, restaurant, park, event, etc.)
   
@@ -41,7 +41,7 @@
   
   Accessibility notes (ramps, transit access, etc.)
 
-## Selection thresholds (per block):
+# Selection thresholds (per block):
   
   Morning: ≤ 15 min from lodging; duration 2–3h
   
@@ -51,7 +51,7 @@
   
   Evening: ≤ 20 min from Afternoon or lodging; duration 1.5–2h; restaurant or optional event
 
-## Guardrails:
+# Guardrails:
   
   Weather: Prefer indoor activities during poor conditions; maintain swap list for outdoor blocks
   
@@ -61,7 +61,7 @@
   
   Time overflow: If blocks exceed daily window, trim Midday first, compress Afternoon, mark Evening optional
 
-## Edge-case handling:
+# Edge-case handling:
   
   Holiday closures: Replace closed venues with markets, neighborhoods, or outdoor walks
   
@@ -71,7 +71,7 @@
   
   Unknown lodging: Default to city center anchor and warn user to provide lodging details
   
-## Loop (per day):
+# Loop (per day):
   for each day:
     pick Morning activity (near lodging, open, fits budget, accessible)
     pick Midday activity (close by, open, fits budget, pace ok)
@@ -83,7 +83,7 @@
     apply missing data defaults
     handle edge cases (holiday closures, accessibility, transport, lodging)
 
-## Output (per day):
+# Output (per day):
 
   Morning: name, type, theme, duration, cost, distance/time, hours note
   
