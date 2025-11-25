@@ -94,8 +94,8 @@
 ---
 
 ## Daily Loop (Pseudocode)
-
-  ''' for each day:
+'''
+  for each day:
   pick Morning activity (near lodging, open, fits budget, accessible)
   pick Midday activity (close by, open, fits budget, pace ok)
   pick Afternoon activity (different theme, open, within travel threshold)
@@ -104,7 +104,8 @@
   apply weather guardrails
   apply budget guardrails
   apply missing data defaults
-  handle edge cases (holiday closures, accessibility, transport, lodging) '''
+  handle edge cases (holiday closures, accessibility, transport, lodging) 
+'''
 
   ---
 
